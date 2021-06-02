@@ -92,27 +92,16 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="prepare_workspace.html">Preparing the Workspace</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generate_tfrecord.html">Generate Tfrecords</a></li>
-<li class="toctree-l1"><a class="reference internal" href="files/generate_tfrecord.html">generate_tfrecord module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TensorBoard.html">Start TensorBoard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="files/model_main_tf2.html">model_main_tf2 module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="training.html">Training the Model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="training.html#Once-the-training-process-has-been-initiated,-you-should-see-a-series-of-print-outs-similar-to-the-one-below-(plus/minus-some-warnings):">Once the training process has been initiated, you should see a series of print outs similar to the one below (plus/minus some warnings):</a></li>
 <li class="toctree-l1"><a class="reference internal" href="files/export_tflite_graph_tf2.html">export_tflite_graph_tf2 module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Export.html">Export the Trained Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Export.html#Convert-a-SavedModel-to-TFlite">Convert a SavedModel to TFlite</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">TensorFlow Lite Metadata Writer API</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#Adding-metadata-to-TensorFlow-Lite-models">Adding metadata to TensorFlow Lite models</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#TensorFlow-Lite-metadata-provides-a-standard-for-model-descriptions.-The-metadata-is-an-important-source-of-knowledge-about-what-the-model-does-and-its-input-/-output-information.">TensorFlow Lite metadata provides a standard for model descriptions. The metadata is an important source of knowledge about what the model does and its input / output information.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#The-metadata-consists-of-both">The metadata consists of both</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#human-readable-parts-which-convey-the-best-practice-when-using-the-model,-and">human readable parts which convey the best practice when using the model, and</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#machine-readable-parts-that-can-be-leveraged-by-code-generators,-such-as-the-TensorFlow-Lite-Android-code-generator-and-the-Android-Studio-ML-Binding-feature.">machine readable parts that can be leveraged by code generators, such as the TensorFlow Lite Android code generator and the Android Studio ML Binding feature.</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#The-ObjectDetector-API-expects-a-TFLite-model-with-mandatory-TFLite-Model-Metadata.">The ObjectDetector API expects a TFLite model with mandatory TFLite Model Metadata.</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#Import-the-required-packages.">Import the required packages.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#Create-metadata-writer-and-populate.">Create metadata writer and populate.</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#Import-the-required-packages.">Import the required packages.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Create-metadata-writer-and-populate.">Create metadata writer and populate.</a></li>
 </ul>
 </li>
 </ul>
@@ -456,18 +445,8 @@ div.rendered_html tbody tr:hover {
 <h1>TensorFlow Lite Metadata Writer API<a class="headerlink" href="#TensorFlow-Lite-Metadata-Writer-API" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="Adding-metadata-to-TensorFlow-Lite-models">
 <h2>Adding metadata to TensorFlow Lite models<a class="headerlink" href="#Adding-metadata-to-TensorFlow-Lite-models" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="TensorFlow-Lite-metadata-provides-a-standard-for-model-descriptions.-The-metadata-is-an-important-source-of-knowledge-about-what-the-model-does-and-its-input-/-output-information.">
-<h2>TensorFlow Lite metadata provides a standard for model descriptions. The metadata is an important source of knowledge about what the model does and its input / output information.<a class="headerlink" href="#TensorFlow-Lite-metadata-provides-a-standard-for-model-descriptions.-The-metadata-is-an-important-source-of-knowledge-about-what-the-model-does-and-its-input-/-output-information." title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="The-metadata-consists-of-both">
-<h2>The metadata consists of both<a class="headerlink" href="#The-metadata-consists-of-both" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="human-readable-parts-which-convey-the-best-practice-when-using-the-model,-and">
-<h2>human readable parts which convey the best practice when using the model, and<a class="headerlink" href="#human-readable-parts-which-convey-the-best-practice-when-using-the-model,-and" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="machine-readable-parts-that-can-be-leveraged-by-code-generators,-such-as-the-TensorFlow-Lite-Android-code-generator-and-the-Android-Studio-ML-Binding-feature.">
-<h2>machine readable parts that can be leveraged by code generators, such as the TensorFlow Lite Android code generator and the Android Studio ML Binding feature.<a class="headerlink" href="#machine-readable-parts-that-can-be-leveraged-by-code-generators,-such-as-the-TensorFlow-Lite-Android-code-generator-and-the-Android-Studio-ML-Binding-feature." title="Permalink to this headline">¶</a></h2>
+<p><strong>TensorFlow Lite metadata provides a standard for model descriptions. The metadata is an important source of knowledge about what the model does and its input / output information.</strong></p>
+<p><strong>The metadata consists of both human readable parts which convey the best practice when using the model, and machine readable parts that can be leveraged by code generators, such as the TensorFlow Lite Android code generator and the Android Studio ML Binding feature.</strong></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -477,12 +456,12 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="section" id="The-ObjectDetector-API-expects-a-TFLite-model-with-mandatory-TFLite-Model-Metadata.">
-<h3>The ObjectDetector API expects a TFLite model with mandatory TFLite Model Metadata.<a class="headerlink" href="#The-ObjectDetector-API-expects-a-TFLite-model-with-mandatory-TFLite-Model-Metadata." title="Permalink to this headline">¶</a></h3>
+<p><strong>The ObjectDetector API expects a TFLite model with mandatory TFLite Model Metadata.</strong></p>
+</div>
 <div class="section" id="Import-the-required-packages.">
-<h4>Import the required packages.<a class="headerlink" href="#Import-the-required-packages." title="Permalink to this headline">¶</a></h4>
+<h2>Import the required packages.<a class="headerlink" href="#Import-the-required-packages." title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -493,7 +472,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="section" id="Create-metadata-writer-and-populate.">
-<h4>Create metadata writer and populate.<a class="headerlink" href="#Create-metadata-writer-and-populate." title="Permalink to this headline">¶</a></h4>
+<h2>Create metadata writer and populate.<a class="headerlink" href="#Create-metadata-writer-and-populate." title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
@@ -663,8 +642,6 @@ div.rendered_html tbody tr:hover {
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span>
 </pre></div>
-</div>
-</div>
 </div>
 </div>
 </div>

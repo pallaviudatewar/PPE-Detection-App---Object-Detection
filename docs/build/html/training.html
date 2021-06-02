@@ -93,14 +93,9 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="prepare_workspace.html">Preparing the Workspace</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generate_tfrecord.html">Generate Tfrecords</a></li>
-<li class="toctree-l1"><a class="reference internal" href="files/generate_tfrecord.html">generate_tfrecord module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TensorBoard.html">Start TensorBoard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="files/model_main_tf2.html">model_main_tf2 module</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Training the Model</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#cd-inside-the-training_demo-folder-and-run-the-following-command:">cd inside the training_demo folder and run the following command:</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#Once-the-training-process-has-been-initiated,-you-should-see-a-series-of-print-outs-similar-to-the-one-below-(plus/minus-some-warnings):">Once the training process has been initiated, you should see a series of print outs similar to the one below (plus/minus some warnings):</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Training the Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="files/export_tflite_graph_tf2.html">export_tflite_graph_tf2 module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Export.html">Export the Trained Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Export.html#Convert-a-SavedModel-to-TFlite">Convert a SavedModel to TFlite</a></li>
@@ -444,8 +439,7 @@ div.rendered_html tbody tr:hover {
 </style>
 <div class="section" id="Training-the-Model">
 <h1>Training the Model<a class="headerlink" href="#Training-the-Model" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="cd-inside-the-training_demo-folder-and-run-the-following-command:">
-<h2>cd inside the training_demo folder and run the following command:<a class="headerlink" href="#cd-inside-the-training_demo-folder-and-run-the-following-command:" title="Permalink to this headline">¶</a></h2>
+<p><strong>cd inside the training_demo folder and run the following command:</strong></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -468,10 +462,7 @@ div.rendered_html tbody tr:hover {
 python: can&#39;t open file &#39;D:\Work\PPE APP\PPE_Object-Detection-App\docs\source\model_main_tf2.py&#39;: [Errno 2] No such file or directory
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="Once-the-training-process-has-been-initiated,-you-should-see-a-series-of-print-outs-similar-to-the-one-below-(plus/minus-some-warnings):">
-<h1>Once the training process has been initiated, you should see a series of print outs similar to the one below (plus/minus some warnings):<a class="headerlink" href="#Once-the-training-process-has-been-initiated,-you-should-see-a-series-of-print-outs-similar-to-the-one-below-(plus/minus-some-warnings):" title="Permalink to this headline">¶</a></h1>
+<p><strong>Once the training process has been initiated, you should see a series of print outs similar to the one below (plus/minus some warnings):</strong></p>
 <p>… WARNING:tensorflow:Unresolved object in checkpoint: (root).model._box_predictor._base_tower_layers_for_heads.class_predictions_with_background.4.10.gamma W0716 05:24:19.105542 1364 util.py:143] Unresolved object in checkpoint: (root).model._box_predictor._base_tower_layers_for_heads.class_predictions_with_background.4.10.gamma WARNING:tensorflow:Unresolved object in checkpoint: (root).model._box_predictor._base_tower_layers_for_heads.class_predictions_with_background.4.10.beta W0716
 05:24:19.106541 1364 util.py:143] Unresolved object in checkpoint: (root).model._box_predictor._base_tower_layers_for_heads.class_predictions_with_background.4.10.beta WARNING:tensorflow:Unresolved object in checkpoint: (root).model._box_predictor._base_tower_layers_for_heads.class_predictions_with_background.4.10.moving_mean W0716 05:24:19.107540 1364 util.py:143] Unresolved object in checkpoint:
 (root).model._box_predictor._base_tower_layers_for_heads.class_predictions_with_background.4.10.moving_mean WARNING:tensorflow:Unresolved object in checkpoint: (root).model._box_predictor._base_tower_layers_for_heads.class_predictions_with_background.4.10.moving_variance W0716 05:24:19.108539 1364 util.py:143] Unresolved object in checkpoint: (root).model._box_predictor._base_tower_layers_for_heads.class_predictions_with_background.4.10.moving_variance WARNING:tensorflow:A checkpoint was
@@ -479,6 +470,15 @@ restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but 
 (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(…).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details. WARNING:tensorflow:num_readers has been reduced to 1 to match input file shards.
 INFO:tensorflow:Step 100 per-step time 1.153s loss=0.761 I0716 05:26:55.879558 1364 model_lib_v2.py:632] Step 100 per-step time 1.153s loss=0.761 …</p>
 <p>Congratulations! You have finished model training!</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
 </div>
 
 

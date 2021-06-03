@@ -8,20 +8,16 @@ Welcome to PPE Object detection-Tensorflow Object Detection API's documentation!
 
 .. toctree::
 
+   :maxdepth: 2
+   :caption: Contents:
+
    prepare_workspace.ipynb
    generate_tfrecord.ipynb
-   files/generate_tfrecord
    TensorBoard.ipynb
-   files/model_main_tf2
    training.ipynb
-   files/export_tflite_graph_tf2
    Export.ipynb
    tflite_metadata.ipynb
 
-   :maxdepth: 10
-   :caption: Contents:
-
-   
 
 Indices and tables
 ==================

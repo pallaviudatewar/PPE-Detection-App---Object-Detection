@@ -1,0 +1,81 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##  Generate Tfrecords"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "colab": {
+     "base_uri": "https://localhost:8080/"
+    },
+    "id": "h5C5-PCp-elV",
+    "outputId": "bf57c407-75dd-4918-92fe-fd4bc8954b5a"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "/content/drive/My Drive/TensorFlow/scripts/preprocessing\n",
+      "Successfully created the TFRecord file: /content/drive/My Drive/TensorFlow/workspace/training_demo/annotations/train.record\n",
+      "Successfully created the TFRecord file: /content/drive/My Drive/TensorFlow/workspace/training_demo/annotations/test.record\n"
+     ]
+    }
+   ],
+   "source": [
+    "#cd into preprocessing directory\n",
+    "%cd '/content/drive/My Drive/TensorFlow/scripts/preprocessing'\n",
+    "\n",
+    "#run the cell to generate test.record and train.record\n",
+    "!python generate_tfrecord.py -x '/content/drive/My Drive/TensorFlow/workspace/training_demo/images/train' -l '/content/drive/My Drive/TensorFlow/workspace/training_demo/annotations/label_map.pbtxt' -o '/content/drive/My Drive/TensorFlow/workspace/training_demo/annotations/train.record'\n",
+    "!python generate_tfrecord.py -x '/content/drive/My Drive/TensorFlow/workspace/training_demo/images/test' -l '/content/drive/My Drive/TensorFlow/workspace/training_demo/annotations/label_map.pbtxt' -o '/content/drive/My Drive/TensorFlow/workspace/training_demo/annotations/test.record'\n",
+    "\n",
+    "# !python generate_tfrecord.py -x '[path_to_train_folder]' -l '[path_to_annotations_folder]/label_map.pbtxt' -o '[path_to_annotations_folder]/train.record'\n",
+    "# !python generate_tfrecord.py -x '[path_to_test_folder]' -l '[path_to_annotations_folder]/label_map.pbtxt' -o '[path_to_annotations_folder]/test.record'\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "ZiAC7HHQRX1B"
+   },
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "accelerator": "GPU",
+  "colab": {
+   "collapsed_sections": [],
+   "name": "PPE_TensorFlow_Object_Detection_API.ipynb",
+   "provenance": [],
+   "toc_visible": true
+  },
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 1
+}

@@ -439,7 +439,11 @@ div.rendered_html tbody tr:hover {
 <h1>TensorFlow Lite Metadata Writer API<a class="headerlink" href="#TensorFlow-Lite-Metadata-Writer-API" title="Permalink to this headline">¶</a></h1>
 <p><strong>Adding metadata to TensorFlow Lite models</strong></p>
 <p><strong>TensorFlow Lite metadata provides a standard for model descriptions. The metadata is an important source of knowledge about what the model does and its input / output information.</strong></p>
-<p><strong>The metadata consists of both human readable parts which convey the best practice when using the model, and machine readable parts that can be leveraged by code generators, such as the TensorFlow Lite Android code generator and the Android Studio ML Binding feature.</strong></p>
+<p><strong>The metadata consists of both</strong> a. human readable parts which convey the best practice when using the model, and</p>
+<ol class="loweralpha simple" start="2">
+<li><p>machine readable parts that can be leveraged by code generators, such as the TensorFlow Lite Android code generator and the Android Studio ML Binding feature.</p></li>
+</ol>
+<p><strong>Step 1:</strong> Install support for tf nightly</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -450,7 +454,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <p><strong>The ObjectDetector API expects a TFLite model with mandatory TFLite Model Metadata.</strong></p>
-<p><strong>Import the required packages.</strong></p>
+<p><strong>Step 2:</strong> Import the required packages.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -461,7 +465,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p><strong>Create metadata writer and populate.</strong></p>
+<p><strong>Step 3:</strong> Create metadata writer and populate.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
@@ -623,15 +627,6 @@ div.rendered_html tbody tr:hover {
 }
 
 </pre></div></div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
 </div>
 </div>
 

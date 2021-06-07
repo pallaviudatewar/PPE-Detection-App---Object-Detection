@@ -15,11 +15,11 @@
    ]
   },
   {
-   "cell_type": "markdown",
-   "metadata": {},
    "source": [
-    "**cd into training demo and run the command**"
-   ]
+    "**Step 1:** cd into training demo and run the command"
+   ],
+   "cell_type": "markdown",
+   "metadata": {}
   },
   {
    "cell_type": "code",
@@ -43,6 +43,13 @@
    "source": [
     "%cd /content/drive/MyDrive/TensorFlow/workspace/training_demo\n"
    ]
+  },
+  {
+   "source": [
+    "**Step 2:** Run the 'export_tflite_graph_tf2.py' using the saved checkpoints as additional paramters and store the resultant model as 'my_model'"
+   ],
+   "cell_type": "markdown",
+   "metadata": {}
   },
   {
    "cell_type": "code",
@@ -95,6 +102,13 @@
    "source": [
     "%cd /content/drive/MyDrive/TensorFlow/workspace/training_demo/Tensorflow Lite Model"
    ]
+  },
+  {
+   "source": [
+    "**Convert the tensorflow model to tensorflow lite model**"
+   ],
+   "cell_type": "markdown",
+   "metadata": {}
   },
   {
    "cell_type": "code",

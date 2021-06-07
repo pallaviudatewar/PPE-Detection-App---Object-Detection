@@ -438,6 +438,18 @@ div.rendered_html tbody tr:hover {
 </style>
 <div class="section" id="Generate-Tfrecords">
 <h1>Generate Tfrecords<a class="headerlink" href="#Generate-Tfrecords" title="Permalink to this headline">¶</a></h1>
+<p><strong>Convert .xml to.record</strong></p>
+<p>To do this we can write a simple script that iterates through all <em>.xml files in the training_demo/images/train and training_demo/images/test folders, and generates a</em>.record file for each of the two.</p>
+<p><strong>The Steps involved in generating TF Records are:</strong></p>
+<ol class="arabic simple">
+<li><p>Change directory into the preprocessing folder</p></li>
+<li><p>Run the cell to generate test.record and train.record</p></li>
+</ol>
+<div class="line-block">
+<div class="line"><em>!python generate_tfrecord.py -x ‘[path_to_train_folder]’ -l ‘[path_to_annotations_folder]/label_map.pbtxt’ -o ‘[path_to_annotations_folder]/train.record’</em></div>
+<div class="line"><em>!python generate_tfrecord.py -x ‘[path_to_test_folder]’ -l ‘[path_to_annotations_folder]/label_map.pbtxt’ -o ‘[path_to_annotations_folder]/test.record’</em></div>
+</div>
+<p>Replace ‘[path_to_train_folder]’, ‘[path_to_annotations_folder]’ and ‘[path_to_test_folder]’ to the actual path on your device</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -465,15 +477,6 @@ div.rendered_html tbody tr:hover {
 Successfully created the TFRecord file: /content/drive/My Drive/TensorFlow/workspace/training_demo/annotations/train.record
 Successfully created the TFRecord file: /content/drive/My Drive/TensorFlow/workspace/training_demo/annotations/test.record
 </pre></div></div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
 </div>
 </div>
 

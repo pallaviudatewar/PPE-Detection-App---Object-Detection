@@ -439,7 +439,7 @@ div.rendered_html tbody tr:hover {
 <div class="section" id="Export-the-Trained-Model">
 <h1>Export the Trained Model<a class="headerlink" href="#Export-the-Trained-Model" title="Permalink to this headline">¶</a></h1>
 <p><strong>We have finished training our model, it’s time to extract our saved_model. This saved_model will be used to perform object recognition.</strong></p>
-<p><strong>cd into training demo and run the command</strong></p>
+<p><strong>Step 1:</strong> cd into training demo and run the command</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -458,6 +458,7 @@ div.rendered_html tbody tr:hover {
 /content/drive/MyDrive/TensorFlow/workspace/training_demo
 </pre></div></div>
 </div>
+<p><strong>Step 2:</strong> Run the ‘export_tflite_graph_tf2.py’ using the saved checkpoints as additional paramters and store the resultant model as ‘my_model’</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -489,6 +490,7 @@ div.rendered_html tbody tr:hover {
 /content/drive/MyDrive/TensorFlow/workspace/training_demo/Tensorflow Lite Model
 </pre></div></div>
 </div>
+<p><strong>Convert the tensorflow model to tensorflow lite model</strong></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>

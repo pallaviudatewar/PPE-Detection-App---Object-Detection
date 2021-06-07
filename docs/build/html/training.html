@@ -438,7 +438,11 @@ div.rendered_html tbody tr:hover {
 </style>
 <div class="section" id="Training-the-Model">
 <h1>Training the Model<a class="headerlink" href="#Training-the-Model" title="Permalink to this headline">¶</a></h1>
-<p><strong>cd inside the training_demo folder and run the following command:</strong></p>
+<p><strong>Change the working directory of the folder:</strong></p>
+<p>cd inside the training_demo folder and run the following command</p>
+<p><strong>Steps to train the model:</strong></p>
+<p><em>a. run the cell to start model training</em></p>
+<p><em>b. !python model_main_tf2.py –model_dir=models/[name_of_pre-trained-model_you_downloaded] –pipeline_config_path=models/[name_of_pre-trained-model_you_downloaded]/pipeline.config_</em></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -446,11 +450,10 @@ div.rendered_html tbody tr:hover {
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1">#Train the model.</span>
 
-<span class="c1">#run the cell to start model training</span>
-<span class="c1">#uncomment the next line to run the command</span>
+
 <span class="c1">#!python model_main_tf2.py --model_dir=models/ssd_mobilenet_v2_320x320 --pipeline_config_path=models/ssd_mobilenet_v2_320x320/pipeline.config</span>
 
-<span class="c1"># !python model_main_tf2.py --model_dir=models/[name_of_pre-trained-model_you_downloaded] --pipeline_config_path=models/[name_of_pre-trained-model_you_downloaded]/pipeline.config</span>
+
 </pre></div>
 </div>
 </div>

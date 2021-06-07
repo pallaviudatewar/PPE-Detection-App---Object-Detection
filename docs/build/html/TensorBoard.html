@@ -438,7 +438,14 @@ div.rendered_html tbody tr:hover {
 </style>
 <div class="section" id="Start-TensorBoard">
 <h1>Start TensorBoard<a class="headerlink" href="#Start-TensorBoard" title="Permalink to this headline">¶</a></h1>
+<p>A very nice feature of TensorFlow, is that it allows you to coninuously monitor and visualise a number of different training/evaluation metrics, while your model is being trained. The specific tool that allows us to do all that is Tensorboard.</p>
 <p><strong>TensorBoard allows you to track and visualize various training metrics while training is ongoing.</strong></p>
+<p>Steps involved are: a. cd into training_demo</p>
+<ol class="loweralpha simple" start="2">
+<li><p>start the Tensorboard</p></li>
+<li><p>%load_ext tensorboard</p></li>
+<li><p>%tensorboard –logdir=models/name_of_pre-trained-model_you_downloaded</p></li>
+</ol>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
@@ -485,7 +492,7 @@ var element = document.currentScript.previousSibling.previousSibling;
 
 </script></div>
 </div>
-<p>**Initially, you will get a message saying “No dashboards are active for the current data set”. But once the training start, you will see various training metrics.__**</p>
+<p><strong>Initially, you will get a message saying “No dashboards are active for the current data set”. But once the training start, you will see various training metrics.</strong></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
